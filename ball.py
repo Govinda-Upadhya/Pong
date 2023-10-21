@@ -9,4 +9,16 @@ class Ball(Turtle):
     self.penup()
     self.x_move=10
     self.y_move=10
-    
+  def move(self):
+    x_cor=self.xmove +10
+    y_cor=self.ymove+10
+    self.goto(x_cor,y_cor)
+  def bouncex(self):
+    self.xmove*=-1
+  def bouncey(self):
+    self.ymove*=-1
+  def positons(self):
+    y_core = self.ycor() + 20
+    return y_core
+  def miss(self):
+    self.goto(0,0)
